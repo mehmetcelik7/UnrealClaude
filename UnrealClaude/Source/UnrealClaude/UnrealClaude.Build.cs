@@ -7,6 +7,7 @@ public class UnrealClaude : ModuleRules
 	public UnrealClaude(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		PrivatePCHHeaderFile = "Private/UnrealClaudePrivatePCH.h";
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
